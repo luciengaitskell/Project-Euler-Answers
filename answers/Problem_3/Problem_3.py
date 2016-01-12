@@ -1,10 +1,20 @@
 num=600851475143
-ii=0
+ii=num-1
 
-for ii in reversed(range(2,num)):
+while ii > 1:
     if num % ii == 0:
-        for jj in range(2,ii)
+        jj=ii
+        flag=False
+        while jj>1:
+            flag=True
             if ii % jj == 0:
+                flag=False
                 break
+            jj= jj-1
+        if flag == True:
+            print ii
+            break
+    ii= ii-1
+    #print(ii)
 
 print ii
